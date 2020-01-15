@@ -1,4 +1,6 @@
 *.o
+/obj/
+libft.a
 /CMakeLists.txt
 /cmake-build-debug/
 /.idea/

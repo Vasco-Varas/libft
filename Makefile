@@ -24,7 +24,7 @@ FT_NAME := libft.a
 
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
-CFLAGS += -O3 -march=native -pipe
+CFLAGS += -O3
 
 .PHONY: all clean fclean re
 

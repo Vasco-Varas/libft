@@ -23,16 +23,16 @@ typedef struct		s_list
 }					t_list;
 
 
-#define		MAX(a, b)				a > b ? a : b
-#define		MIN(a, b)				a < b ? a : b
+#define				MAX(a, b)						a > b ? a : b
+#define				MIN(a, b)						a < b ? a : b
 
-#define		LOG_INFO(str)			ft_printf("{#CCCCCC}[INFO]: '%s'\n{reset}", str)
-#define		LOG_WARN(str)			ft_printf("{#EEEE00}[WARNING]: '%s'\n{reset}", str)
-#define		LOG_ERROR(str)			ft_printf("{bold}{underline}{#FF2222}[ERROR]{reset}{#FF6666}: '%s'\n{reset}", str)
+#define				LOG_INFO(str)					ft_printf("{#CCCCCC}[INFO]: '%s'\n{reset}", str)
+#define				LOG_WARN(str)					ft_printf("{#EEEE00}[WARNING]: '%s'\n{reset}", str)
+#define				LOG_ERROR(str)					ft_printf("{bold}{underline}{#FF2222}[ERROR]{reset}{#FF6666}: '%s'\n{reset}", str)
 
-#define		LOG_STATUS_GREEN(str, status)	ft_printf("%s: {#22CC22}[%s]\n{reset}", str, status)
-#define		LOG_STATUS_YELLOW(str, status)	ft_printf("%s: {#EEEE00}[%s]\n{reset}", str, status)
-#define		LOG_STATUS_RED(str, status)		ft_printf("%s: {#FF2222}[%s]\n{reset}", str, status)
+#define				LOG_STATUS_GREEN(str, status)	ft_printf("%s: {#22CC22}[%s]\n{reset}", str, status)
+#define				LOG_STATUS_YELLOW(str, status)	ft_printf("%s: {#EEEE00}[%s]\n{reset}", str, status)
+#define				LOG_STATUS_RED(str, status)		ft_printf("%s: {#FF2222}[%s]\n{reset}", str, status)
 
 
 int					ft_ishexdigit(int c);
@@ -118,5 +118,6 @@ void				ft_strclr(char *s);
 void				ft_strdel(char **as);
 void				ft_striter(char *s, void (*f)(char*));
 void				ft_striteri(char *s, void (*f)(unsigned int, char*));
+void				ft_arr_free(char **array);
 
 #endif
